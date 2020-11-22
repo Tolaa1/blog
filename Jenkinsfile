@@ -1,4 +1,4 @@
-Jenkinsfile (Declarative Pipeline)
+// Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent any
 
@@ -20,3 +20,13 @@ pipeline {
         }
     }
 }
+// pipeline {
+//     agent { docker { image 'ruby' } }
+//     stages {
+//         stage('build') {
+//             steps {
+//                 sh 'ruby --version'
+//             }
+//         }
+//     }
+// }
