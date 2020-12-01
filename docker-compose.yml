@@ -2,6 +2,9 @@ version: '3'
 services:
   db:
     image: postgres:9.6-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
   web:
